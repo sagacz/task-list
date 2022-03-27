@@ -1,0 +1,72 @@
+**************** BEGIN OF FETCHING *******************
+**** STEP 1 - query for task ****
+Hibernate: select task0_.id as id1_2_, task0_.name as name2_2_, task0_.status as status3_2_ from task task0_ where task0_.id in (15 , 16 , 17 , 18 , 19 , 20 , 21)
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@240f2efd
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+*** STEP 4 – read the subtask data ***
+com.jpa.tasks.domain.Task@5906ebfb
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 5 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+*** STEP 5 – read the person data ***
+com.jpa.tasks.domain.Person@2e1ad7de
+*** STEP 4 – read the subtask data ***
+com.jpa.tasks.domain.Task@10fc1a22
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 5 – read the person data ***
+com.jpa.tasks.domain.Person@395197cb
+*** STEP 4 – read the subtask data ***
+com.jpa.tasks.domain.Task@1b841e7d
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 5 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@4bfe83d
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@395197cb
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@134955bb
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+*** STEP 4 – read the subtask data ***
+com.jpa.tasks.domain.Task@6081f330
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 5 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+*** STEP 4 – read the subtask data ***
+com.jpa.tasks.domain.Task@eb695e8
+Hibernate: select persons0_.task_id as task_id1_3_0_, persons0_.persons_id as persons_2_3_0_, person1_.id as id1_0_1_, person1_.first_name as first_na2_0_1_, person1_.last_name as last_nam3_0_1_ from task_persons persons0_ inner join person person1_ on persons0_.persons_id=person1_.id where persons0_.task_id=?
+*** STEP 5 – read the person data ***
+com.jpa.tasks.domain.Person@2e1ad7de
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@5906ebfb
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@2e1ad7de
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@10fc1a22
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@395197cb
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@1b841e7d
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@6081f330
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@21bf308
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+*** STEP 2 – read data from task ***
+com.jpa.tasks.domain.Task@eb695e8
+*** STEP 3 – read the person data ***
+com.jpa.tasks.domain.Person@2e1ad7de
+Hibernate: select subtasks0_.parent_task_id as parent_t4_2_0_, subtasks0_.id as id1_2_0_, subtasks0_.id as id1_2_1_, subtasks0_.name as name2_2_1_, subtasks0_.status as status3_2_1_ from task subtasks0_ where subtasks0_.parent_task_id=?
+****************** END OF FETCHING *******************
